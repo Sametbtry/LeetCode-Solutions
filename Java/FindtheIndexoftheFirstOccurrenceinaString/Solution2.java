@@ -17,7 +17,7 @@ Zaman Karmaşıklığı: O(n)
 Uzay Karmaşıklığı: O(1)
 */
 
-class Main {
+class Main2 {
     public static void main(String[] args){
         Solution2 solution = new Solution2();
         int result = solution.strStr("sadad", "ad");

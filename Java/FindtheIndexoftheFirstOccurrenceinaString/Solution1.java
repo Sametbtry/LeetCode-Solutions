@@ -38,7 +38,7 @@ Herhangi bir ek veri yapısı veya dinamik bellek tahsisi yapılmaz.
 Bu nedenle, bu algoritmanın uzay karmaşıklığı O(1)'dir.
 */
 
-class Main {
+class Main1 {
     public static void main(String[] args){
         Solution1 solution = new Solution1();
         int result = solution.strStr("sadad", "ad");

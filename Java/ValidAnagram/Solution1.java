@@ -27,7 +27,7 @@ Zaman Karmaşıklığı: O(n log n), çünkü Arrays.sort() kullanılıyor.
 Uzay Karmaşıklığı: O(n), çünkü iki yeni karakter dizisi (char[]) oluşturuluyor.
  */
 
- class Main{
+ class Main1{
     public static void main(String[] args){
         Solution1 S = new Solution1();
         System.out.println(S.isAnagram("abbb", "babk"));

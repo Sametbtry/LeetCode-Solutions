@@ -130,7 +130,7 @@ Space Complexity: Değişmez, hala O(n + m), ancak bellek kullanımı daha verim
 Eğer isterseniz, `StringBuilder` ile optimize edilmiş bir çözüm yazabilirim. Bu, kodunuzu daha hızlı ve daha temiz hale getirecektir.
  */
 
-class Main {
+class Main1 {
     public static void main(String[] args) {
         Solution1 solution = new Solution1();
         String result = solution.mergeAlternately("abc", "defg");

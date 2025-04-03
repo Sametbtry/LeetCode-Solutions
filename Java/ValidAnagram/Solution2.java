@@ -60,7 +60,7 @@ Zaman Karmaşıklığı: O(n), çünkü s ve t stringleri sadece bir kere taran�
 
 Uzay Karmaşıklığı: O(1), çünkü sabit boyutlu bir int[26] dizisi kullanılıyor.
  */
-class Main{
+class Main2{
     public static void main(String[] args){
         Solution2 S = new Solution2();
         System.out.println(S.isAnagram("abbb", "babk"));

@@ -20,7 +20,7 @@ Zaman Karmaşıklığı: O(n), tek dongude tarama yapiliyor.
 Uzay Karmaşıklığı: O(n).
  */
 
-class Main {
+class Main2 {
     public static void main(String[] args) {
         Solution2 solution = new Solution2();
         String result = solution.mergeAlternately("abc", "defg");
