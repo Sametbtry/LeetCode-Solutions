@@ -1,4 +1,4 @@
-package RepeatedSubstringPattern;
+package repeatedSubstringPattern;
 
 public class Solution4 {
     public boolean repeatedSubstringPattern(String s) {

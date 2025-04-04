@@ -1,4 +1,4 @@
-package RepeatedSubstringPattern;
+package repeatedSubstringPattern;
 
 class Solution2 {
 

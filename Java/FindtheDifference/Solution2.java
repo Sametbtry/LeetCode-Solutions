@@ -1,4 +1,4 @@
-package FindtheDifference;
+package findTheDifference;
 
 class Solution2 {
     public char findTheDifference(String s, String t) {        

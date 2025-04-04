@@ -1,4 +1,4 @@
-package RepeatedSubstringPattern;
+package repeatedSubstringPattern;
 
 import java.util.ArrayList;
 
