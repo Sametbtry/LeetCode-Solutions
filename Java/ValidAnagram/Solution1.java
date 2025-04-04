@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Siralayip Karsilastirma
 
-public class Solution1 {
+class Solution1 {
     public boolean isAnagram(String s, String t){
         char[] sChars = s.toCharArray();
         char[] tChars = t.toCharArray();
@@ -19,6 +19,11 @@ Java'da dizilerin içeriğini karşılaştırmak için Arrays.equals() kullanmal
  */
         return Arrays.equals(sChars, tChars);
     }
+
+    public static void main(String[] args){
+        Solution1 S = new Solution1();
+        System.out.println(S.isAnagram("abbb", "babk"));
+    }
 }
 
 /*
@@ -27,9 +32,3 @@ Zaman Karmaşıklığı: O(n log n), çünkü Arrays.sort() kullanılıyor.
 Uzay Karmaşıklığı: O(n), çünkü iki yeni karakter dizisi (char[]) oluşturuluyor.
  */
 
- class Main1{
-    public static void main(String[] args){
-        Solution1 S = new Solution1();
-        System.out.println(S.isAnagram("abbb", "babk"));
-    }
- }

@@ -1,6 +1,6 @@
 package MergeStringsAlternately;
 
-public class Solution1 {
+class Solution1 {
     public String mergeAlternately(String word1, String word2) {
 /*
         int word1Len = word1.length();
@@ -58,6 +58,12 @@ public class Solution1 {
             }
         }
         return resultStr;
+    }
+
+    public static void main(String[] args) {
+        Solution1 solution = new Solution1();
+        String result = solution.mergeAlternately("abc", "defg");
+        System.out.println(result);
     }
 }
 
@@ -130,10 +136,3 @@ Space Complexity: Değişmez, hala O(n + m), ancak bellek kullanımı daha verim
 Eğer isterseniz, `StringBuilder` ile optimize edilmiş bir çözüm yazabilirim. Bu, kodunuzu daha hızlı ve daha temiz hale getirecektir.
  */
 
-class Main1 {
-    public static void main(String[] args) {
-        Solution1 solution = new Solution1();
-        String result = solution.mergeAlternately("abc", "defg");
-        System.out.println(result);
-    }
-}

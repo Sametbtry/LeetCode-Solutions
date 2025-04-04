@@ -1,6 +1,6 @@
 package ValidAnagram;
 
-public class Solution2 {
+class Solution2 {
     public boolean isAnagram(String s, String t) {
         int[] count = new int[26];  // İngiliz alfabesindeki 26 harf için bir dizi oluştur
 
@@ -53,16 +53,15 @@ count[15] = 2 → 'p' harfi 2 kez var.
 
         return true;
     }
+
+    public static void main(String[] args){
+        Solution2 S = new Solution2();
+        System.out.println(S.isAnagram("abbb", "babk"));
+    }
 }
     
 /*
 Zaman Karmaşıklığı: O(n), çünkü s ve t stringleri sadece bir kere taranıyor.
 
 Uzay Karmaşıklığı: O(1), çünkü sabit boyutlu bir int[26] dizisi kullanılıyor.
- */
-class Main2{
-    public static void main(String[] args){
-        Solution2 S = new Solution2();
-        System.out.println(S.isAnagram("abbb", "babk"));
-    }
- }
+*/

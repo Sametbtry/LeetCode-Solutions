@@ -1,6 +1,6 @@
 package MergeStringsAlternately;
 
-public class Solution2 {
+class Solution2 {
     public String mergeAlternately(String word1, String word2) {
         StringBuilder result = new StringBuilder();
         int i = 0;
@@ -12,6 +12,12 @@ public class Solution2 {
         }
         return result.toString();
     }   
+
+    public static void main(String[] args) {
+        Solution2 solution = new Solution2();
+        String result = solution.mergeAlternately("abc", "defg");
+        System.out.println(result);
+    }
 }
 
 /*
@@ -20,10 +26,4 @@ Zaman Karmaşıklığı: O(n), tek dongude tarama yapiliyor.
 Uzay Karmaşıklığı: O(n).
  */
 
-class Main2 {
-    public static void main(String[] args) {
-        Solution2 solution = new Solution2();
-        String result = solution.mergeAlternately("abc", "defg");
-        System.out.println(result);
-    }
-}
+
