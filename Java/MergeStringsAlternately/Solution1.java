@@ -123,7 +123,7 @@ Evet, `StringBuilder` kullanıldığında space complexity (alan karmaşıklığ
 
  Space Complexity (Alan Karmaşıklığı):
 - `String` kullanıldığında, her `concat` çağrısı yeni bir `String` nesnesi oluşturur ve bu, gereksiz bellek tüketimine yol açar. Bu nedenle, `String` ile alan karmaşıklığı O(n + m) idi.
-- Ancak, `StringBuilder` kullanıldığında, tek bir dinamik tampon (buffer) kullanılır ve tüm karakterler bu tamponda biriktirilir. Bu, ek bellek tahsisini önler.
+- Ancak, `StringBuilder` kullanıldığında, tek bir dinamik tampon (buffer) kullanılır ve tüm karakterler bu buffer'da biriktirilir. Bu, ek bellek tahsisini önler.
 - `StringBuilder`'ın kullandığı alan, yalnızca birleştirilen dizelerin toplam uzunluğuna eşittir.
 - Sonuç: Alan karmaşıklığı O(n + m) olarak kalır, ancak daha verimli bir şekilde kullanılır (yani, gereksiz nesne oluşturma maliyeti ortadan kalkar).
 
