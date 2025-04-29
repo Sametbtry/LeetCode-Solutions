@@ -1,6 +1,5 @@
 package canMakeArithmeticProgressionFromSequence;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 class Solution1 {
