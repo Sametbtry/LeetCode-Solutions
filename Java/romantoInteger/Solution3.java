@@ -24,6 +24,7 @@ public class Solution3 {
 
 // time complexity O(n)
 // space complexity O(1)
+// if else yada switch case yapisindan biraz daha yavas
 
 /*| Özellik                    | `Map.of()`  (java 9+)                | `HashMap`            |
 | -------------------------- | -------------------------------------- | -------------------- |
