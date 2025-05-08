@@ -1,13 +1,5 @@
 package length_of_Last_word;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Set;
-
 class Solution2 {
     public int lengthOfLastWord(String s) {
         s = s.trim(); // O(n) time ve space
@@ -28,7 +20,15 @@ class Solution2 {
 
 // for (char index : s) { // hatali kulaim cunku  String bir Iterable<char>  değildir.
 // 
-// itarable 
+// itarable collections
+// import java.util.ArrayList;
+// import java.util.Arrays;
+// import java.util.HashSet;
+// import java.util.LinkedList;
+// import java.util.List;
+// import java.util.Queue;
+// import java.util.Set;
+
 // List
 // List<String> names = new ArrayList<>();
 // for (String name : names) {
