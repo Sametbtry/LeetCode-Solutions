@@ -1,4 +1,4 @@
-package monotonic_array;
+package solutions.monotonic_array;
 
 public class Solution2 {
     boolean increasing(int[] nums){

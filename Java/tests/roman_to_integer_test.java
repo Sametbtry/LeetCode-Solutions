@@ -1,6 +1,8 @@
-import roman_to_integer.Solution4;
+package tests;
 
-class roman_to_integer_test {
+import solutions.roman_to_integer.Solution4;
+
+class Roman_to_integer_test {
     public static void main(String[] args) {
         Solution4 solution = new Solution4();
         System.out.println(solution.romanToInt("III")); // Output: 3

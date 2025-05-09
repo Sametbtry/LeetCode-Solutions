@@ -1,6 +1,8 @@
-import repeated_substring_pattern.*;
+package tests;
 
-public class repeated_substring_pattern_test {
+import solutions.repeated_substring_pattern.*;
+
+public class Repeated_substring_pattern_test {
     public static void main(String[] args) {
         // Test cases for the repeatedSubstringPattern method
         String testString1 = "abab";

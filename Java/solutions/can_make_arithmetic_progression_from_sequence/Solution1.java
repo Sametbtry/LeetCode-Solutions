@@ -1,4 +1,4 @@
-package can_make_arithmetic_progression_from_sequence;
+package solutions.can_make_arithmetic_progression_from_sequence;
 
 import java.util.Arrays;
 

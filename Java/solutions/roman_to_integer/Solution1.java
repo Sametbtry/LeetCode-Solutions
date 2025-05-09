@@ -1,4 +1,4 @@
-package roman_to_integer;
+package solutions.roman_to_integer;
 
 class Solution1 {
     public int romanToInt(String s) {

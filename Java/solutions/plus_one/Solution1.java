@@ -1,4 +1,4 @@
-package plus_one;
+package solutions.plus_one;
 import java.lang.Math;
 
 public class Solution1 {

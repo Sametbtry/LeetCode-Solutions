@@ -1,6 +1,8 @@
-import monotonic_array.*;
+package tests;
 
-public class monotonic_array_test {   
+import solutions.monotonic_array.*;
+
+public class Monotonic_array_test {   
     public static void main(String[] args){
         Solution1 solution = new Solution1();
         boolean result = solution.isMonotonic(new int[] {4,4,3,2});

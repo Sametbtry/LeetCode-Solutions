@@ -1,4 +1,4 @@
-package repeated_substring_pattern;
+package solutions.repeated_substring_pattern;
 
 import java.util.ArrayList;
 

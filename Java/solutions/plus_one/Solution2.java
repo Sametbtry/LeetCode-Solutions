@@ -1,4 +1,4 @@
-package plus_one;
+package solutions.plus_one;
 
 public class Solution2 {
     public int[] plusOne(int[] digits) {

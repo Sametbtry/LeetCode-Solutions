@@ -1,6 +1,8 @@
-import move_zeroes.*;
+package tests;
 
-public class move_zeroes_test {
+import solutions.move_zeroes.*;
+
+public class Move_zeroes_test {
     public static void main (String[] args){
         Solution1 solution = new Solution1();
         int[] nums = new int[] {1, 0, 7, 0, 2};

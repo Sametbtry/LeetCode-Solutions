@@ -1,4 +1,4 @@
-package sign_of_the_product_of_an_array;
+package solutions.sign_of_the_product_of_an_array;
 
 public class Solution2 {
     public int arraySign(int[] nums){

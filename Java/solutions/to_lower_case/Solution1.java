@@ -1,4 +1,4 @@
-package to_lower_case;
+package solutions.to_lower_case;
 
 public class Solution1 {
     public String toLowerCase (String s){

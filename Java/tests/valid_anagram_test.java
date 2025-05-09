@@ -1,6 +1,8 @@
-import valid_anagram.*;
+package tests;
 
-class valid_anagram_test {
+import solutions.valid_anagram.*;
+
+class Valid_anagram_test {
     public static void main(String[] args) {
         Solution1 solution = new Solution1();
         System.out.println(solution.isAnagram("anagram", "nagaram")); // Output: true

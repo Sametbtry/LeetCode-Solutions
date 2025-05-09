@@ -1,4 +1,4 @@
-package find_the_difference;
+package solutions.find_the_difference;
 
 public class Solution1 {
     public char findTheDifference(String s, String t) {

@@ -1,4 +1,4 @@
-package move_zeroes;
+package solutions.move_zeroes;
 import java.util.ArrayList; 
 
 public class Solution1 {

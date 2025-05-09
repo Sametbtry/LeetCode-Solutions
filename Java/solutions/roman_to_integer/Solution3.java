@@ -1,4 +1,4 @@
-package roman_to_integer;
+package solutions.roman_to_integer;
 
 import java.util.Map;
 
