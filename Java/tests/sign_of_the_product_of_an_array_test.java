@@ -2,7 +2,7 @@ package tests;
 
 import solutions.sign_of_the_product_of_an_array.*;
 
-public class Sign_of_the_product_of_an_array_test {
+public class Sign_Of_The_Product_Of_An_Array_Test {
     public static void main(String[] args) {
         Solution1 solution = new Solution1();
         System.out.println(solution.arraySign(new int[]{-1, -2, -3, -4, 3, 2, 1})); // Output: 1

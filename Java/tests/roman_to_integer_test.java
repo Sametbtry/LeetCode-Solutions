@@ -2,7 +2,7 @@ package tests;
 
 import solutions.roman_to_integer.Solution4;
 
-class Roman_to_integer_test {
+class Roman_To_Integer_Test {
     public static void main(String[] args) {
         Solution4 solution = new Solution4();
         System.out.println(solution.romanToInt("III")); // Output: 3

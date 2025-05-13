@@ -2,7 +2,7 @@ package tests;
 
 import solutions.repeated_substring_pattern.*;
 
-public class Repeated_substring_pattern_test {
+public class Repeated_Substring_Pattern_Test {
     public static void main(String[] args) {
         // Test cases for the repeatedSubstringPattern method
         String testString1 = "abab";

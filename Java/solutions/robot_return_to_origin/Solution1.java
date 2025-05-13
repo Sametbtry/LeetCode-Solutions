@@ -23,8 +23,10 @@ public class Solution1 {
             }
         }
     
-    if (positions[0] == 0 && positions[1] == 0) return true;
-    else return false;
+    // if (positions[0] == 0 && positions[1] == 0) return true;
+    // else return false;
+    return (positions[0] == 0 && positions[1] == 0); // bu sekilede daha okunabilir.
     }
-
 }
+// time complexity = O(N)
+// space complexity = O(1)

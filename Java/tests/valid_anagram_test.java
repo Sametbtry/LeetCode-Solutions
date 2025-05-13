@@ -2,7 +2,7 @@ package tests;
 
 import solutions.valid_anagram.*;
 
-class Valid_anagram_test {
+class Valid_Anagram_Test {
     public static void main(String[] args) {
         Solution1 solution = new Solution1();
         System.out.println(solution.isAnagram("anagram", "nagaram")); // Output: true
