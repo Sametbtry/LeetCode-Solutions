@@ -1,5 +1,8 @@
 ##### Find The Difference
 
+- findTheDifference
+    
+    
     ```python
     (function) def ord(
         c: str | bytes | bytearray,
@@ -15,6 +18,9 @@
     ```
     
 ##### Merge Alternately
+    
+- mergeAlternately
+    
     
     ```python
     for a, b in zip(word1, word2): # 2 iterable obje
