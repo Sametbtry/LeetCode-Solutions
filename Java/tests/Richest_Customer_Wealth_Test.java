@@ -1,6 +1,6 @@
 package tests;
 
-import solutions.richest_customer_wealth.Solution1;
+import solutions.richest_customer_wealth.*;
 
 public class Richest_Customer_Wealth_Test {
     public static void main(String[] args) {
