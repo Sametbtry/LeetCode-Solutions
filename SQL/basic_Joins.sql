@@ -37,5 +37,14 @@ group by v.customer_id;
   FROM visits v
  WHERE v.visit_id NOT IN (SELECT visit_id FROM transactions)
  GROUP BY v.customer_id;
- #--------------------
+
+
+-- 197. Rising Temperature
+-- Write your PostgreSQL query statement below
+SELECT today.id FROM Weather AS today
+WHERE EXISTS (
+    SELECT 1 FROM Weather AS yesterday
+    WHERE  today.temperature > yesterday.temperature 
+    AND today.recordDate  = yesterday.recordDate + 1
+);
  
