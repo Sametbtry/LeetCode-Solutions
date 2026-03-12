@@ -37,4 +37,5 @@ group by v.customer_id;
   FROM visits v
  WHERE v.visit_id NOT IN (SELECT visit_id FROM transactions)
  GROUP BY v.customer_id;
+ #--------------------
  
