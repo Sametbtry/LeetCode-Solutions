@@ -48,3 +48,37 @@ WHERE EXISTS (
     AND today.recordDate  = yesterday.recordDate + 1
 );
  
+-- 570. Managers with at Least 5 Direct Reports
+-- Write your PostgreSQL query statement below
+SELECT e.name 
+FROM Employee e
+JOIN (
+    SELECT managerId 
+    FROM Employee 
+    GROUP BY managerId 
+    HAVING COUNT(managerId) >= 5
+) m ON e.id = m.managerId;
+/* Low performance
+SELECT name FROM Employee
+    WHERE id IN (
+        SELECT managerId FROM Employee
+        GROUP BY managerId 
+        HAVING COUNT(managerId) >= 5
+    )
+
+    Şu basit senaryoyu düşün: Tabloda 100.000 çalışan var. Sadece `id=1` olan yöneticinin 5 çalışanı var.
+
+**IN Yöntemi Adım Adım:**
+1. **Alt sorgu çalışır:** 5'ten fazla çalışanı olanları bulur ve bellekte bir liste oluşturur: `[1]`.
+2. **Tarama başlar:** Veritabanı ana tablodaki 100.000 satırı en baştan tek tek okumaya başlar.
+3. **Sorgulama:** Okuduğu her satır için şu soruyu sorar: "Senin id değerin `[1]` listesinin içinde geçiyor mu?". 
+**Neden verimsiz?** Veritabanı hedefi bulsa bile diğer satırları da kontrol etmek için bu soruyu tam 100.000 kere sorar. Liste kalabalıksa sistem felç olur.
+
+**JOIN Yöntemi Adım Adım:**
+1. **Alt sorgu çalışır:** 5'ten fazla çalışanı olanları bulur ve bunu geçici bir tablo yapar: `[1]`.
+2. **Eşleştirme (Hash/Index Match):** Veritabanı 100.000 satırı tek tek taramaz. Bunun yerine elindeki `1` değerini alır, ana tablonun **indeksine** (kitabın arkasındaki fihrist gibi düşün) bakar.
+3. **Nokta atışı:** İndeks sayesinde ana tablodaki `id=1` olan kaydın tam olarak nerede olduğunu anında bulur ve gidip o veriyi çeker.  (NOT : Primary key oldugu icin otomatik olarak index var.)
+**Neden verimli?** Geriye kalan 99.999 satırın hiçbirine bakmaz, onlarla vakit kaybetmez. Doğrudan adrese teslim işlem yapar.
+*/
+
+
